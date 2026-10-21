@@ -15,6 +15,11 @@ var evenOrOdd = function (number) {
 
 // 04. Return Negative
 var makeNegative = function (number) {
+  return number < 0 ? number : -number;
+};
+
+// 05. Opposite Number
+var makeNegative = function (number) {
   if (number > 0) {
     return -number;
   } else if (number < 0) {
