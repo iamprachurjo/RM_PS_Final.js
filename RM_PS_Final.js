@@ -165,15 +165,15 @@ var gradingStudents = function (grades) {
 // 20. Time Conversion
 var timeConversion = function (s) {
   let period = s.slice(-2);
-  let times = s.slice(0,-2);
-  let [hour, minutes,second] = times.split(":");
-  if (period ==="AM") {
+  let times = s.slice(0, -2);
+  let [hour, minutes, second] = times.split(":");
+  if (period === "AM") {
     if (hour === "12") {
-      hour ="00";
+      hour = "00";
     }
   } else {
     if (hour !== "12") {
-      hour =String(Number(hour) + 12);
+      hour = String(Number(hour) + 12);
     }
   }
   return `${hour}:${minutes}:${second}`;
@@ -194,7 +194,7 @@ var positiveSum = function (arr) {
   let sum = 0;
   for (let i = 0; i < arr.length; i++) {
     if (arr[i] > 0) {
-      sum =sum+ arr[i];
+      sum = sum + arr[i];
     }
   }
   return sum;
@@ -204,7 +204,12 @@ var positiveSum = function (arr) {
 var summation = function (num) {
   let total = 0;
   for (let i = 1; i <= num; i++) {
-    total =test+ i;
+    total = test + i;
   }
   return total;
+};
+
+// 25. Convert a Boolean to a String
+var booleanToString = function (b) {
+  return String(b);
 };
