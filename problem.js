@@ -72,5 +72,14 @@ var diff21 = function (n) {
 
 // 11. parrotTrouble
 var parrotTrouble = function (talking, hour) {
-    return talking && (hour <= 7 || hour >= 20);
+  return talking && (hour <= 7 || hour >= 20);
+};
+
+// 12. makes10
+var makes10 = function (a, b) {
+  if (a === 10 || b === 10 || a + b === 10) {
+    return true;
+  } else {
+    return false;
+  }
 };
