@@ -53,9 +53,19 @@ var monkeyTrouble = function (aSmile, bSmile) {
 
 // 09. sumDouble
 var sumDouble = function (a, b) {
-  if (a == b) {
+  if (a === b) {
     sum = a + b;
     return sum * 2;
   }
   return sum;
+};
+
+// 10. diff21
+var diff21 = function (n) {
+  if (n > 21) {
+    sub = n - 21;
+    return sub * 2;
+  } else {
+    return 21 - n;
+  }
 };
