@@ -115,10 +115,10 @@ var notString = function (str) {
 var compareTriplets = function (a, b) {
   var you = 0;
   var me = 0;
-  for (var i = 0; i <3; i++) {
+  for (var i = 0; i < 3; i++) {
     if (a[i] > b[i]) {
       you++;
-    } else if (a[i]< b[i]) {
+    } else if (a[i] < b[i]) {
       me++;
     }
   }
@@ -140,10 +140,24 @@ var staircase = function (n) {
   for (let i = 1; i <= n; i++) {
     let space = " ".repeat(n - i);
     let hashe = "#".repeat(i);
-    result += space +hashe;
+    result += space + hashe;
     if (i < n) {
       result = result + "\n";
     }
   }
   return result;
+};
+
+// 19. Grading Students
+var gradingStudents = function (grades) {
+  return grades.map((grade) => {
+    if (grade < 38) {
+      return grade;
+    }
+    let mul5 = Math.ceil(grade / 5) * 5;
+    if (mul5 - grade < 3) {
+      return mul5;
+    }
+    return grade;
+  });
 };
