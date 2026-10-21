@@ -42,3 +42,11 @@ var simpleArraySum = function (ar) {
 var sleepIn = function (weekday, vacation) {
   return !weekday || vacation;
 };
+
+// 08. monkeyTrouble
+var monkeyTrouble = function (aSmile, bSmile) {
+    if((aSmile && bSmile) || (!aSmile && !bSmile)){
+        return true;
+    }
+    return false;
+};
