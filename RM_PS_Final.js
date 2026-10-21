@@ -124,3 +124,26 @@ var compareTriplets = function (a, b) {
   }
   return [you, me];
 };
+
+// 17. A Very Big Sum
+var aVeryBigSum = function (ar) {
+  let sum = 0;
+  for (let i = 0; i < ar.length; i++) {
+    sum = sum + ar[i];
+  }
+  return sum;
+};
+
+// 18. Staircase
+var staircase = function (n) {
+  let result = "";
+  for (let i = 1; i <= n; i++) {
+    let space = " ".repeat(n - i);
+    let hashe = "#".repeat(i);
+    result += space +hashe;
+    if (i < n) {
+      result = result + "\n";
+    }
+  }
+  return result;
+};
