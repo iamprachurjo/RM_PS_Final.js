@@ -178,3 +178,8 @@ var timeConversion = function (s) {
   }
   return `${hour}:${minutes}:${second}`;
 };
+
+// 21. String Repeat
+var repeatStr = function (n, s) {
+  return s.repeat(n);
+};
