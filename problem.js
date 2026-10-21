@@ -45,8 +45,17 @@ var sleepIn = function (weekday, vacation) {
 
 // 08. monkeyTrouble
 var monkeyTrouble = function (aSmile, bSmile) {
-    if((aSmile && bSmile) || (!aSmile && !bSmile)){
-        return true;
-    }
-    return false;
+  if ((aSmile && bSmile) || (!aSmile && !bSmile)) {
+    return true;
+  }
+  return false;
+};
+
+// 09. sumDouble
+var sumDouble = function (a, b) {
+  if (a == b) {
+    sum = a + b;
+    return sum * 2;
+  }
+  return sum;
 };
