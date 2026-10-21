@@ -12,3 +12,14 @@ var multiply = function (a, b) {
 var evenOrOdd = function (number) {
   return number % 2 === 0 ? "Even" : "Odd";
 };
+
+// 04. Return Negative
+var makeNegative = function (number) {
+  if (number > 0) {
+    return -number;
+  } else if (number < 0) {
+    return -number;
+  } else {
+    return 0;
+  }
+};
