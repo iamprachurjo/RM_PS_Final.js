@@ -69,3 +69,8 @@ var diff21 = function (n) {
     return 21 - n;
   }
 };
+
+// 11. parrotTrouble
+var parrotTrouble = function (talking, hour) {
+    return talking && (hour <= 7 || hour >= 20);
+};
