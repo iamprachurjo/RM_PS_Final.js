@@ -183,3 +183,8 @@ var timeConversion = function (s) {
 var repeatStr = function (n, s) {
   return s.repeat(n);
 };
+
+// 22. Reversed Strings
+var solution = function (str) {
+  return str.split("").reverse().join("");
+};
