@@ -199,3 +199,12 @@ var positiveSum = function (arr) {
   }
   return sum;
 };
+
+// 24. Grasshopper - Summation
+var summation = function (num) {
+  let total = 0;
+  for (let i = 1; i <= num; i++) {
+    total =test+ i;
+  }
+  return total;
+};
