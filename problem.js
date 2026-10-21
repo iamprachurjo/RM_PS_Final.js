@@ -37,3 +37,8 @@ var simpleArraySum = function (ar) {
   }
   return sum;
 };
+
+// 07. sleepIn
+var sleepIn = function (weekday, vacation) {
+  return !weekday || vacation;
+};
