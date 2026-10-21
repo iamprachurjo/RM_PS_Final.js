@@ -161,3 +161,20 @@ var gradingStudents = function (grades) {
     return grade;
   });
 };
+
+// 20. Time Conversion
+var timeConversion = function (s) {
+  let period = s.slice(-2);
+  let times = s.slice(0,-2);
+  let [hour, minutes,second] = times.split(":");
+  if (period ==="AM") {
+    if (hour === "12") {
+      hour ="00";
+    }
+  } else {
+    if (hour !== "12") {
+      hour =String(Number(hour) + 12);
+    }
+  }
+  return `${hour}:${minutes}:${second}`;
+};
