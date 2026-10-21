@@ -96,8 +96,17 @@ var nearHundred = function (n) {
 // 14. posNeg
 var posNeg = function (a, b, negative) {
   if (negative) {
-    return a <0 && b< 0;
+    return a < 0 && b < 0;
   } else {
-    return (a <0 && b> 0) || (a >0 && b< 0);
+    return (a < 0 && b > 0) || (a > 0 && b < 0);
+  }
+};
+
+// 15. notString
+var notString = function (str) {
+  if (str.startsWith("not")) {
+    return str;
+  } else {
+    return "not " + str;
   }
 };
