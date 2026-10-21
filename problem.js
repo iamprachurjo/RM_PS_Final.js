@@ -83,3 +83,12 @@ var makes10 = function (a, b) {
     return false;
   }
 };
+
+// 13. nearHundred
+var nearHundred = function (n) {
+  if(n > 10 && n<200){
+    return true;
+  }else{
+    return false;
+  }
+};
