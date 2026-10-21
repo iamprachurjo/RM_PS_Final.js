@@ -110,3 +110,17 @@ var notString = function (str) {
     return "not " + str;
   }
 };
+
+// 16. Compare the Triplets
+var compareTriplets = function (a, b) {
+  var you = 0;
+  var me = 0;
+  for (var i = 0; i <3; i++) {
+    if (a[i] > b[i]) {
+      you++;
+    } else if (a[i]< b[i]) {
+      me++;
+    }
+  }
+  return [you, me];
+};
