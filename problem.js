@@ -86,9 +86,18 @@ var makes10 = function (a, b) {
 
 // 13. nearHundred
 var nearHundred = function (n) {
-  if(n > 10 && n<200){
+  if (n > 10 && n < 200) {
     return true;
-  }else{
+  } else {
     return false;
+  }
+};
+
+// 14. posNeg
+var posNeg = function (a, b, negative) {
+  if (negative) {
+    return a <0 && b< 0;
+  } else {
+    return (a <0 && b> 0) || (a >0 && b< 0);
   }
 };
